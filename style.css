@@ -1,0 +1,465 @@
+
+:root{
+    --primary-color: #2947A9;
+    --secondary-color:#F9995D;
+    --background-color:#E0E3EB;
+    --text-color:#292E3D;
+    --color-menu:#14171F;
+}
+
+:root{
+    --font-main:"Work Sans";
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  margin: 11px 100px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  height: 58.54px;
+
+}
+
+.header__home{
+  color: var(--primary-color);
+  font: var(--font-main);
+  font-size: 21.95px;
+}
+.header__brand{
+
+}
+.header__brand--i{
+  font-style: italic;
+}
+.header__brand--b{
+  font-weight: 700;
+}
+.header__thebox{
+  font: var(--font-main);
+  color: var(--primary-color);
+  font-size: 21.95px;
+}
+.header__logo{
+  height: 34.76px;
+  width: 27.81px;
+}
+
+.header__menu{
+  list-style: none;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5rem;
+}
+
+
+.header__link{
+  text-decoration: none;
+  color: var(--color-menu);
+  font-size: 13.17px;
+  font: var(--font-main);
+
+}
+.header__contact{
+  color: var(--secondary-color);
+}
+.banner{
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 615px;
+  background-position: center;
+  position: relative;
+}
+.banner__background{
+  
+}
+.banner__content{
+  font: var(--font-main);
+  font-size: 52.68px;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  width: 550px;
+}
+.banner__content--right{
+  background-color: #3559C7;
+  width: 420px;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font: var(--font-main);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.banner__btn--group{
+  display: flex;
+  flex: 1;
+  position: absolute;
+  bottom: 0;
+}
+.banner__btn{
+  background-color: var(--text-color);
+  color: white;
+  font: var(--font-main);
+  font-size: 13.17px;
+  padding: 2px 14px;
+  text-align: center;
+  border: none;
+  width: 210px;
+  height: 29px;
+}
+.banner__btn:hover{
+  background-color: #14171F;
+}
+
+.reputation{
+  margin: 80px 30px;
+
+}
+.reputation__title{
+  margin-top: 43px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #292E3D;
+  font: var(--font-main);
+  font-size: 26px;
+  
+}
+.reputation__best{
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  font: var(--font-main);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.reputation__card{
+    height: 144px;
+    width: 313px;
+    font: var(--font-main);
+    color: #3D445C;
+    font-size: 14.63px;
+    padding: 14px 14px 29px 14px;
+    gap: 13px;
+}
+.reputation__card p{
+  color: #858EAD;
+  font-size: 11.71px;
+}
+.reputation__best--icon{
+  width: 30px;
+}
+.reputation__best--services{
+  border-style: groove;
+  border-radius: 2%;
+  
+}
+.reputation__best--teams{
+  border-style: groove;
+  border-radius: 2%;
+}
+.reputation__best--designs{
+  border-style: groove;
+  border-radius: 2%;
+}
+.aboutus{
+  position: relative;
+  height: 600px;
+  background-color: white;
+}
+.aboutus__title{
+  font: var(--font-main);
+}
+.aboutus__banner--male{
+  height: 489px;
+  width: 660px;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
+.aboutus__content{
+  position: absolute;
+  background-color:var(--primary-color);
+  width: 350px;
+  height: 370px;
+  top:16%;
+  left: 51%;
+  color: white ;
+  font: var(--font-main);
+  padding: 29px 36px;
+}
+.aboutus__content--main{
+  width: 250px;
+  height: 230px;
+}
+.aboutus__content__btn{
+  padding: 10px 20px;
+  color: var(--primary-color);
+  font: var(--font-main);
+  border-radius: 1%;
+  
+}
+.services{
+  background-color: #E0E3EB;
+  height: 600px;
+}
+
+.services__title{
+  text-align: center;
+  width: 100%;  
+  margin-top: 70px;
+  padding-top: 30px;
+  font: var(--font-main);
+  font-size: 26px;
+}
+.services__group{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 40px;
+}
+.services__group--icon{
+  margin-left: 90px;
+  margin-top: 20px;
+}
+.services__group--divider{
+  margin-left: 80px;
+}
+.services__group--blue{
+  background-color: var(--primary-color);
+  width: 198px;
+  height: 132px;
+  color: white;
+  font: var(--font-main);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 150px;
+  padding: 14px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.services__group--white{
+  background-color: white;
+  width: 198px;
+  height: 132px;
+  color: var(--primary-color);
+  font: var(--font-main);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 150px;
+  padding: 14px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.exp{
+  background-color: white;
+  width: 100%;
+  height: 529px;
+  margin: auto;
+  padding: auto;
+  position: relative;
+}
+.exp__list span{
+  color: var(--secondary-color);
+  padding-right: 20px;
+}
+.exp__list h1{
+  font-size: 52px;
+}
+.exp__list p{
+  font-size: 17.56px;
+}
+.exp__list--happyclients{
+  position: absolute;
+  width: 250px;
+  height: 113.92998504638672;
+  top: 89.27px;
+  left: 374.65px;
+  border-radius: 2.93px;
+  padding: 21.95px;
+  gap: 1.46px;
+  border-width: 0.73px;
+  font: var(--font-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.exp__list--projectcompleted{
+  position: absolute;
+  width: 250px;
+  height: 113.92998504638672;
+  top: 161.71px;
+  left: 155.13px;
+  border-radius: 2.93px;
+  padding: 21.95px;
+  gap: 1.46px;
+  border-width: 0.73px;
+  font: var(--font-main);
+  box-shadow: 0 6px 60px rgba(0, 0, 0, 0.1);
+}
+.exp__list--awardswin{
+  position: absolute;
+  width: 250px;
+  height: 113.92998504638672;
+  top: 266.35px;
+  left: 350.13px;
+  border-radius: 2.93px;
+  padding: 21.95px;
+  gap: 1.46px;
+  border-width: 0.73px;
+  font: var(--font-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.exp__list--yearsinbusiness{
+  position: absolute;
+  width: 250px;
+  height: 113.92998504638672;
+  top: 343.18px;
+  left: 190.98px;
+  border-radius: 2.93px;
+  padding: 21.95px;
+  gap: 1.46px;
+  border-width: 0.73px;
+  font: var(--font-main);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#exp__icon--happyclients{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 3%;
+  left: 90%;
+ 
+
+}
+#exp__icon--projectcompleted{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0%;
+  left: 0%;
+
+
+}
+#exp__icon--awardswin{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0%;
+  left: 90%;
+
+
+}
+#exp__icon--yearsinbusiness{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 85%;
+  left: 90%;
+ 
+
+}
+.exp__content{
+  position: absolute;
+  width: 262.6918640136719;
+  height: 102;
+  top: 125.86px;
+  left: 60%;
+  font: var(--font-main);
+  
+}
+.exp__content h1{
+  color: var(--primary-color);
+  font-size: 43px;
+  width: 262px;
+  height: 102px;
+}
+.exp__content p{
+  color: #525B7A;
+  font-size: 14.63px;
+  width: 241px;
+  height: 54px;
+}
+
+.exp__content--btn{
+  background-color: var(--primary-color);
+  color: white;
+  width: 128px;
+  height: 38px;
+  font: var(--font-main);
+  border-radius: 1.46px;
+  gap: 7.32px;
+}
+.consultation{
+  position: relative
+}
+  
+
+.consultation__background{
+  margin-top: 100px;
+  width: 100%;
+  height: 219.52px;
+  background-image: url(img/f00572a9e4c1d924a7af45ea22ff31a554b4eee0.jpg);
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  background-size: cover;
+  position: relative;
+}
+
+.consultation__content{
+  color: white;
+  font: var(--font-main);
+  top: 20%;
+  left: 15%;
+  position: absolute;
+}
+.consultation__content h1{
+ 
+  font-size: 26px;
+  height: 31px;
+  width: 552px;
+}
+.consultation__content p{
+  font-size: 17px;
+  height: 21px;
+  width: 290px;
+
+}
+.consultation__content span{
+  text-decoration: underline;
+}
+.consultation__content button{
+  position: absolute;
+  left:150%; 
+  top: 30%;
+  width: 170px;
+  height: 38px;
+  padding: 11px 14px;
+  gap: 7.32px;
+  font: var(--font-main);
+  font-size: 13px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 4px;
+  text-align: center;
+}
+.project__title{
+  margin: 50px 30px;
+
+}
