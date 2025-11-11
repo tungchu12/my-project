@@ -247,36 +247,125 @@
   </div>
   <div class="projects__menu">
     <ul>
-      <li>All</li>
-      <li>Commercial</li>
-      <li>Residential</li>
-      <li>Other</li>
+      <li><a href="#">All</a></li>
+      <li><a href="#">Commercial</a></li>
+      <li><a href="#">Residential</a></li>
+      <li><a href="#">Other</a></li>
     </ul>
   </div>
   <div class="projects__content">
     <div class="projects__content--wildstone">
       <img src="img/089bf250bdd2caa4b33e7eb864d788a16c95da1e.jpg" alt="wildstone" class="projects__content--img">
-      <h1>Wildstone Infra Hotel</h1>
-      <p>2715 Ash Dr. San Jose, South Dakota</p>
+      <h1> Wildstone Infra Hotel</h1>
+      <p> 2715 Ash Dr. San Jose, South Dakota</p>
     </div>
     <div class="projects__content--wishstone">
       <img src="img/f042d9f36de69d6d289fec45cc15040db6b8cb7c.jpg" alt="wishstone" class="projects__content--img">
-      <h1>Wish Stone Building</h1>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+      <h1> Wish Stone Building</h1>
+      <p> 2972 Westheimer Rd. Santa Ana, Illinois </p>
     </div>
     <div class="projects__content--mrparkinston">
       <img src="img/028a0cef1bf65382382cde195cc45b34a13e4399.jpg" alt="mrparkinston" class="projects__content--img">
-      <h1>Mr. Parkinston’s House</h1>
-      <p>3517 W. Gray St. Utica, Pennsylvania </p>
+      <h1> Mr. Parkinston’s House</h1>
+      <p> 3517 W. Gray St. Utica, Pennsylvania </p>
     </div>
     <div class="projects__content--oregano">
       <img src="img/efb357ca4521dda2f5a91dd1a02dbc47a02c9f36.jpg" alt="oregano" class="projects__content--img">
-      <h1>Oregano Height</h1>
-      <p>2464 Royal Ln. Mesa, New Jersey  </p>
+      <h1> Oregano Height</h1>
+      <p> 2464 Royal Ln. Mesa, New Jersey  </p>
+    </div>
+    <div class="projects__btn">
+      <button class="projects__btn--back">Back</button>
+      <button class="projects__btn--next">Next</button>
     </div>
 
   </div>
 </section>
+<section class="formcontact">
+  <div class="formcontact__title">
+    <h1>What can us do for you?</h1>
+    <p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+  </div>
+  <form class="formcontact__content" required>
+    <div class="formcontact__content--infor">
+    <label for="yourname"></label>
+    <input type="text" name="yourname" id="yourname" placeholder="Your Name" class="formcontact__content--yourname" required>
+    <label for="email"></label>
+    <input type="email" name="email" id="email" placeholder="Email" class="formcontact__content--email" required>
+   
+   
+    <select name="reason" id="reason" class="formcontact__content--reason" required>
+      <option value="" >Reason for Contacting*</option>
+      <option value="Support">Support</option>
+      <option value="Sales">Sales</option>
+      <option value="Feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="phone"></label>
+    <input type="phone" name="phone" id="phone" placeholder="Phone"class="formcontact__content--phone" required>
+    </div>
+    <div class="formcontact__content--message">
+    <label for="message"></label>
+
+    <textarea name="message" id="message" placeholder="Message" class="formcontact__content--message"></textarea>
+    </div>
+    <div class="form__content--text">
+    <p><span>*</span> indicates a required fiel</p>
+    </div>
+    <input type="submit" value="Submit" class="formcontact__content--submit">
+    
+
+  </form>
+</section>
+<section class="inforcontact">
+  <div class="inforcontact__infor">
+    <h3>Address: <span>6391 Elgin St. Celina, Delaware 10299</span></h3>
+    <h3>Phone: <span>+84 1102 2703</span></h3>
+    <h3>Email: <span>hello@thebox.com</span></h3>
+  </div>
+  <form class="inforcontact__email">
+    <h3>Newsletter:</h3>
+    <input type="email" placeholder="Your email here" class="inforcontact__email--text">
+    <input type="submit" value="Subscribe" class="inforcontact__email--submit">
+  </form>
+  <div class="inforcontact__social">
+    <h3>Social:</h3>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.7164C0 21.9922 5.28433 28.0424 12.1955 29.2693V18.6994H8.53688V14.6346H12.1955V11.3821C12.1955 7.72343 14.5529 5.69166 17.8872 5.69166C18.9433 5.69166 20.0824 5.85386 21.1385 6.01606V9.75643H19.2689C17.4799 9.75643 17.0738 10.6504 17.0738 11.7894V14.6346H20.9763L20.3263 18.6994H17.0738V29.2693C23.985 28.0424 29.2693 21.9934 29.2693 14.7164C29.2693 6.62218 22.6837 0 14.6346 0C6.58559 0 0 6.62218 0 14.7164Z" fill="#3D445C"/>
+    </svg>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1020_564)">
+    <path d="M14.6346 0.585205C6.8753 0.585205 0.585327 6.87518 0.585327 14.6345C0.585327 22.3938 6.8753 28.6837 14.6346 28.6837C22.3939 28.6837 28.6838 22.3938 28.6838 14.6345C28.6838 6.87518 22.3939 0.585205 14.6346 0.585205ZM11.1954 20.4576H8.35047V11.3022H11.1954V20.4576ZM9.75539 10.1782C8.85683 10.1782 8.27583 9.54161 8.27583 8.75426C8.27583 7.95082 8.87439 7.33324 9.79198 7.33324C10.7096 7.33324 11.2715 7.95082 11.2891 8.75426C11.2891 9.54161 10.7096 10.1782 9.75539 10.1782ZM21.586 20.4576H18.7411V15.3838C18.7411 14.2027 18.3284 13.4008 17.2996 13.4008C16.5137 13.4008 16.0468 13.9437 15.8405 14.4662C15.7644 14.652 15.7454 14.9154 15.7454 15.1774V20.4561H12.8989V14.2218C12.8989 13.0788 12.8623 12.1232 12.8243 11.3007H15.2961L15.4263 12.5724H15.4834C15.858 11.9753 16.7756 11.0943 18.3108 11.0943C20.1826 11.0943 21.586 12.3485 21.586 15.0442V20.4576V20.4576Z" fill="#3D445C"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1020_564">
+    <rect width="29.2693" height="29.2693" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1020_566)">
+    <path d="M14.6347 0.585205C6.87542 0.585205 0.585449 6.87518 0.585449 14.6345C0.585449 22.3938 6.87542 28.6837 14.6347 28.6837C22.394 28.6837 28.684 22.3938 28.684 14.6345C28.684 6.87518 22.394 0.585205 14.6347 0.585205ZM20.3495 12.0939C20.3554 12.2139 20.3569 12.3339 20.3569 12.451C20.3569 16.1096 17.5748 20.3259 12.4849 20.3259C10.9809 20.3284 9.50814 19.8964 8.24376 19.0819C8.45889 19.1083 8.67987 19.1185 8.90378 19.1185C10.2004 19.1185 11.3931 18.678 12.34 17.9346C11.763 17.9232 11.2039 17.7322 10.7406 17.388C10.2773 17.0438 9.93296 16.5637 9.75552 16.0145C10.1699 16.0933 10.5968 16.0768 11.0039 15.9662C10.3776 15.8396 9.81435 15.5002 9.40971 15.0057C9.00508 14.5112 8.78393 13.8919 8.78378 13.253V13.2193C9.15696 13.4256 9.58429 13.5515 10.038 13.5661C9.45082 13.1753 9.03518 12.5749 8.87604 11.8877C8.7169 11.2006 8.82629 10.4786 9.18184 9.86942C9.87692 10.7241 10.7437 11.4233 11.7262 11.9217C12.7086 12.4201 13.7848 12.7066 14.885 12.7627C14.7451 12.169 14.8053 11.5457 15.0562 10.9897C15.3071 10.4337 15.7347 9.97624 16.2724 9.68834C16.8102 9.40044 17.428 9.29827 18.0298 9.39771C18.6316 9.49715 19.1837 9.79263 19.6002 10.2382C20.2195 10.1157 20.8134 9.88853 21.3564 9.56649C21.15 10.2077 20.7179 10.7521 20.1403 11.0987C20.6888 11.0327 21.2245 10.8852 21.7296 10.6612C21.3586 11.2171 20.8912 11.7023 20.3495 12.0939V12.0939Z" fill="#3D445C"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1020_566">
+    <rect width="29.2693" height="29.2693" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+  </div>
+  <div class="inforcontact__logo">
+    <img src="img/z7199000562097_8ad1479b0a8461818f71b18dbd1085a2.jpg" alt="" height="34px" width="27px">
+    <h3><span>The</span>Box</h3>
+  </div>
+</section>
+<footer class="coppyright">
+  <div class="coppyright__content">
+    <h1>TheBox Company © 2022. All Rights Reserved</h1>
+  </div>
+
+</footer>
 </body>
 
 
