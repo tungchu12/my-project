@@ -27,7 +27,7 @@ console.log(mang2);
 //      - Sử dụng filter để lọc ra các số chẵn trong một mảng.
 const mang3 =[1,2,3,4,5,6,7,8,9,10];
 const mang4 = mang3.filter(laSoChan);
-function laSoChan(x){
+function laSoChan(x){   
     return x % 2 === 0;
 }
 console.log(mang4);
