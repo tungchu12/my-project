@@ -66,57 +66,39 @@ export function OurReputation(props){
     </div>
   )
 }
-//----------Tạo một component Form để nhập thông tin-----------
-export function Input({label , type , value , onChange }){
+//----------Tạo một component Form để nhập thông tin-----
+export function Input({label , type}){
   return(
-      <form action="" >
+      <form action="">
         <label >{label}</label>
-        <input type={type} value={value} onChange={onChange} />
+        <input type={type} />
       </form>
   )
 }
 
 export function Form(){
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  
-  const handleClick = () => {
-    const data = {
-      name,
-      phone,
-      email
-    };
-    console.log(data);
-    alert("Đã gửi thông tin!");
-  };
   return(
     <div className="form-info">
       <Input
         label ="Họ và tên"
         type ="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
       />
       <Input
         label ="Số điện thoại"
         type ="number"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
       />  
       <Input
         label= "Email"
-        type = "Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        type="email"
       />
-      <button onClick={handleClick}>Gửi</button>
-      
+      <Input
+        type="submit"
+      />
     </div>
   )
 }
 
-//-----Tạo một component đếm số lần click của người dùng và hiển thị kết quả.--------
+
 export function CountClick(){
   const [count, setCount] = useState(0);
   return(
@@ -126,40 +108,11 @@ export function CountClick(){
       </div>
   )
 }
-//----------------------------------------------
-export function ToDoList(){
-  const [input ,setInput] = useState("");
-  const [task, setTask] =useState([]);
-  const handleInput = () =>{
-    if (input.trim() === "") return;          
-    setTask([...task, input]);              
-    setInput("");  
+
+export function LoopClick({count}){
+  const items =0;
+  for(let i =0; i< count; i++) {
+       items.push(i);
   }
-
-  const handleDelete = (index) => {
-    const filtered = task.filter((_, i) => i !== index);
-    setTask(filtered);
-  };
-  
-
- return (
-    <section>
-      <Input
-        label="Nhập vào công việc:"
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-
-      <button onClick={handleInput}>Nhập</button>
-      <ul>
-        {task.map((item, index) => (
-          <li key={index}>
-            {item}
-            <button onClick={() => handleDelete(index)}>X</button>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
+  return <div>{items}</div>;
 }
